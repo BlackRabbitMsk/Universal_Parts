@@ -50,7 +50,9 @@
 	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='Weight']/@value">4</set>
 	
 	<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Material']/@value">MUniversalParts</set>
-	<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Weight']/@value">4</set>
+	<insertAfter xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Material']">
+		<property name="Weight" value="4"/>
+	</insertAfter>
 	
 	
 	<append xpath="/items/item[@name='gunBowT1WoodenBowParts']">
